@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit';
+    }
+
+    .container {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 345px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .container img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .pricendays {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .pricendays p:nth-child(1) {
+      font-size: 1rem;
+      font-weight: 700;
+      color: hsl(178, 100%, 50%);
+      display: flex;
+      align-items: center;
+    }
+
+    .pricendays p:nth-child(1) img {
+      width: 0.8rem;
+      margin-right: 0.5rem;
+    }
+
+    .pricendays p:nth-child(2) {
+      font-size: 1rem;
+      font-weight: 400;
+      color: hsl(215, 51%, 70%);
+      display: flex;
+      align-items: center;
+    }
+
+    .pricendays p:nth-child(2) img {
+      width: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    hr {
+      color: hsl(215, 32%, 27%);
+    }
+
+    .creation {
+      color: hsl(215, 51%, 70%);
+      display: flex;
+      align-items: center;
+    }
+    
+    .creation img {
+      width: 1.5rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      border-color: #fff;
+      border-width: 2px;
+      border-style: solid;
+    }
+
+    .creation span {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/image-equilibrium.jpg" alt="">
+    <p class="title">Equilibrium #3429</p>
+    <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="pricendays">
+      <p><img src="images/icon-ethereum.svg"> 0.041 ETH</p>
+      <p><img src="images/icon-clock.svg">3 days left</p>
+    </div>
+    <hr>
+    <p class="creation"><img src="images/image-avatar.png">Creation of <span>Jules Wyvern</span></p>
+  </div>
+</body>
+
+</html>
